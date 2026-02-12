@@ -2,16 +2,7 @@
 
 A comprehensive toolkit for crawling, enriching, and managing academic citation data. This project provides a complete pipeline to collect citations of a target paper, merge duplicate records, fetch full abstracts, and retrieve BibTeX entries.
 
-## 项目名称建议
-
-**Citation-Crawler-Toolkit** (学术引文爬取工具包)
-
-## 文件命名建议
-
-1. `citation_scraper.py` - 原代码1 (爬取被引文章)
-2. `citation_merger.py` - 原代码2 (合并去重)  
-3. `abstract_fetcher.py` - 原代码3 (获取完整摘要)
-4. `bibtex_fetcher.py` - 原代码4 (获取BibTeX)
+一个全面的学术引文数据爬取、补全和管理工具包。本项目提供了完整的工作流程，用于收集目标论文的引用文献、合并去重、获取完整摘要以及检索BibTeX引用格式。
 
 ---
 
@@ -116,7 +107,7 @@ YEAR_RANGES = generate_year_ranges(start_year, end_year)  # 按年份分段爬�
 
 ---
 
-### 2. citation_merger.py - 合并去重[可选，当第一步设置好起始年份一次爬取成功时，可以跳过第二步]
+### 2. citation_merger.py - 合并去重 [ 可选，当第一步设置好起始年份一次爬取成功时，可以跳过第二步 ]
 
 #### 功能
 合并多个引文数据文件，基于标题进行去重。
@@ -426,11 +417,3 @@ python bibtex_fetcher.py
 3. 对比多个数据源的摘要选择最完整的
 
 ---
-
-## 许可证
-
-MIT License
-
----
-
-**最后提醒：学术数据采集请遵守各平台的使用条款，合理控制请求频率，尊重知识产权。**
